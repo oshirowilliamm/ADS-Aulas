@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Cadastro do Aluno | FitHouse</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body>
+        <div class="forms">
+            <a href="../index.html" class="botaoVoltar"> Voltar </a>
+            
+            <h1> Cadastro do Aluno </h1>
+            
+            <form method="POST" action="InserirAluno.jsp">
+                
+                <div class="infos">
+                    <label>Nome: </label>
+                    <input type="text" name="nome" required><p>
+                    <label>Idade: </label>
+                    <input type="number" name="idade" required><p>
+                    <label>Peso (kg): </label>
+                    <input type="number" step="0.01" min="1" name="peso" required><p>
+                    <label>Altura (m): </label>
+                    <input type="number" step="0.01" min="1" name="altura" required><p>
+                    <label>Objetivo: </label>
+                    <select name="objetivo">
+                        <option>Ganhar Massa</option>
+                        <option>Manter</option>
+                        <option>Emagrecer</option>
+                    </select> <p>
+                    <label>Frequência semanal: </label>
+                    <input type="number" min="1" max="7" name="frequencia" required>
+                     
+                </div>
+                
+                <input type="submit" value="ENVIAR">
+            </form>
+            
+            <br><!-- comment -->
+            <br><!-- comment -->
+            <br><!-- comment -->
+            <a href="ListarAluno.jsp" class="botaoLista">Lista dos Alunos</a>
+            
+        </div>
+    </body>
+</html>

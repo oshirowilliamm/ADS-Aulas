@@ -1,0 +1,341 @@
+/* ============================
+   RESET GERAL
+   ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("../img/academia3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* escurece a imagem */
+    backdrop-filter: blur(0.8px); /* opcional */
+    z-index: -1;
+}
+
+/* Fonte padrão */
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffcc00;
+}
+
+/* Links padrão */
+a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #e6b800;
+}
+
+
+/* ============================
+   HOME
+   ============================ */
+.home {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.home h1 {
+    margin-bottom: 60px;
+    font-size: 45px;
+}
+
+.home a {
+    display: block;
+    width: 280px;
+    margin: 15px auto;
+    padding: 15px;
+    background: #111;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    color: #ffcc00;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.home a:hover {
+    background: #ffcc00;
+    color: #111;
+}
+
+
+/* ============================
+   FORMULÁRIOS (Cadastro / Editar)
+   ============================ */
+.forms, .editar {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.forms h1, .editar h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.forms a, .editar a {
+    color: #ffcc00;
+    font-weight: 700;
+}
+
+.infos label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.infos input,
+.infos select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    background: #0d0d0d;
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.infos input:focus,
+.infos select:focus {
+    border-color: #ffcc00;
+}
+
+/* Botão ENVIAR */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    color: #111;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #e6b800;
+}
+
+/* Botão listar */
+.botaoLista {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin-top: 10px;
+    background: #ffcc00;
+    color: #111 !important;
+    border-radius: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.botaoLista:hover {
+    background: #e6b800;
+}
+
+
+/* ===== Radios e Checkboxes ===== */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #ffcc00; /* Amarelo FitHouse */
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+label input[type="radio"],
+label input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+/* ============================
+   LISTA DE ALUNOS (Tabela)
+   ============================ */
+.lista {
+    width: 95%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.lista h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #111;
+    padding: 15px;
+    font-size: 15px;
+    border-bottom: 2px solid #ffcc00;
+    color: #ffcc00;
+}
+
+td {
+    padding: 15px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+tr:hover td {
+    background: #242424;
+}
+
+/* Ações */
+.botao {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.editar {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.editar input[type="text"],
+.editar input[type="number"],
+.editar input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: white;
+    font-size: 16px;
+}
+
+.editar input[type="submit"] {
+    background: #ffcc00;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.editar input[type="submit"]:hover {
+    background: #e6b800;
+}
+
+/* Botão Editar */
+.botaoEditar,
+.editar .botaoEditar,
+.botao.editar {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #ffcc00;    /* Amarelo FitHouse */
+    color: #111 !important;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.botaoEditar:hover,
+.botao.editar:hover {
+    background: #e6b800;
+}
+
+
+/* Botão Excluir */
+.botaoExcluir,
+.botao.excluir {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #cc0000;    /* Vermelho forte */
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.botaoExcluir:hover,
+.botao.excluir:hover {
+    background: #990000;
+}
+
+/* Botão Voltar */
+.editar .botaoVoltar {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-bottom: 20px;
+    background: #555;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.editar .botaoVoltar:hover {
+    background: #666;
+}
+
+.excluir {
+    background: #d62828;
+}
+
+.excluir:hover {
+    background: #b81f1f;
+}
+
+/* Botão voltar */
+.botaoVoltar {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #444;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    color: #fff !important;
+}
+
+.botaoVoltar:hover {
+    background: #333;
+}

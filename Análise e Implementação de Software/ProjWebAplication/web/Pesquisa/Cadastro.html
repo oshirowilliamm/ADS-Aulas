@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Pesquisa de Satisfação | FitHouse</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body>
+        <div class="forms">
+            <a href="../index.html" class="botaoVoltar"> Voltar </a>
+            
+            <h1> Pesquisa de Satisfação do Cliente </h1>
+            
+            <form method="POST" action="Cadastro.jsp">
+                
+                <div class="infos">
+                    
+                    <label>Nome: 
+                    <input type="text" name="nome" required> </label> <p>
+                        
+                    <label>Email: 
+                    <input type="text" name="email" required> </label>  <p>
+
+                    <label>1. Como você avalia a qualidade dos equipamentos da academia? </label>  <br>
+                    <input type="radio" name="r1" value="1" required> 1 - Muito ruim <br>
+                    <input type="radio" name="r1" value="2"> 2 - Ruim <br>
+                    <input type="radio" name="r1" value="3"> 3 - Regular <br>
+                    <input type="radio" name="r1" value="4"> 4 - Bom <br>
+                    <input type="radio" name="r1" value="5"> 5 - Excelente <br><br>
+
+                    <label>2. Como você avalia a limpeza e organização dos ambientes da FitHouse? </label>  <br>
+                    <input type="radio" name="r2" value="1" required> 1 - Muito ruim <br>
+                    <input type="radio" name="r2" value="2"> 2 - Ruim <br>
+                    <input type="radio" name="r2" value="3"> 3 - Regular <br>
+                    <input type="radio" name="r2" value="4"> 4 - Bom <br>
+                    <input type="radio" name="r2" value="5"> 5 - Excelente <br><br>
+
+                    <label>3. Como você classifica o atendimento e suporte oferecido pela nossa equipe? </label>  <br>
+                    <input type="radio" name="r3" value="1" required> 1 - Muito ruim <br>
+                    <input type="radio" name="r3" value="2"> 2 - Ruim <br>
+                    <input type="radio" name="r3" value="3"> 3 - Regular <br>
+                    <input type="radio" name="r3" value="4"> 4 - Bom <br>
+                    <input type="radio" name="r3" value="5"> 5 - Excelente <br><br>
+
+                    <label>4. Qual o seu nível de satisfação com as aulas e serviços oferecidos (musculação, funcional, personal, etc.)? </label> <br>
+                    <input type="radio" name="r4" value="1" required> 1 - Muito ruim <br>
+                    <input type="radio" name="r4" value="2"> 2 - Ruim <br>
+                    <input type="radio" name="r4" value="3"> 3 - Regular <br>
+                    <input type="radio" name="r4" value="4"> 4 - Bom <br>
+                    <input type="radio" name="r4" value="5"> 5 - Excelente <br><br>   
+                </div>
+                
+                <input type="submit" value="ENVIAR">
+            </form>
+            
+            <br><!-- comment -->
+            <br><!-- comment -->
+            <br><!-- comment -->
+            <a href="Listar.jsp" class="botaoLista">Lista da Pesquisa</a>
+        </div>
+    </body>
+</html>
